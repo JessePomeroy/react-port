@@ -26,7 +26,7 @@ export const Carousel = () => {
             link: "https://github.com/gustavomg21/Horizen.FM"
         },
         {
-            title: "Weights",
+            title: "5 Day Forecast",
             description:
                 "A weather forecast app utilizing openweathermap api to search and display current and 5 day forecast for a given city. requiring bootstrap, jquery and day.js.",
             image: require("../assets/images/5day.PNG"),
