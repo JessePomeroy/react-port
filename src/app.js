@@ -1,7 +1,14 @@
 import React, { useState } from 'react';
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { FaHome } from 'react-icons/fa';
+import { BrowserRouter, NavLink, Navigate, Route, Routes } from "react-router-dom";
+import AboutMe from "./components/about";
+import { Carousel } from "./components/carousel";
+
 import Navbar from "./components/navbar";
 import "./style/index.css";
+
+const ICON_SIZE = 20;
+
 
 function App() {
     const [navVisible, showNavbar] = useState(false);
@@ -11,35 +18,60 @@ function App() {
             <div className="App">
                 <Navbar visible={navVisible} show={showNavbar} />
                 <Routes>
-                    <Route path="/" element={<Navigate to="/dashboard" />} />
-                    <Route path='/socials' element={
+                    <Route path="/react-port" element={<Navigate to="/about" />} />
+                    <Route path='/projects' element={
                         <div className={!navVisible ? "page" : "page page-with-navbar"}>
-                            <h1>Socials</h1>
+                            <Carousel />
+                            <NavLink to="/about" className="home-link">
+                                <FaHome size={ICON_SIZE} />
+                                <span>Home</span>
+                            </NavLink>
                         </div>
                     } />
                     <Route path='/blackrabbit' element={
                         <div className={!navVisible ? "page" : "page page-with-navbar"}>
-                            <h1>Black Rabbit</h1>
+                            <h1 className="name">Black Rabbit</h1>
+                            <a href="https://blackrabbitshop.com"> Black Rabbit </a>
+                            <NavLink to="/about" className="home-link">
+                                <FaHome size={ICON_SIZE} />
+                                <span>Home</span>
+                            </NavLink>
+                        </div>
+                    } />
+                    <Route path='/socials' element={
+                        <div className={!navVisible ? "page" : "page page-with-navbar"}>
+                            <h1 className="name">Socials</h1>
+                            <NavLink to="/about" className="home-link">
+                                <FaHome size={ICON_SIZE} />
+                                <span>Home</span>
+                            </NavLink>
                         </div>
                     } />
                     <Route path='/github' element={
                         <div className={!navVisible ? "page" : "page page-with-navbar"}>
-                            <h1>Github</h1>
-                        </div>
-                    } />
-                    <Route path='/projects' element={
-                        <div className={!navVisible ? "page" : "page page-with-navbar"}>
-                            <h1>Projects</h1>
+                            <h1 className="name">who am i?...</h1>
+                            <AboutMe />
                         </div>
                     } />
                     <Route path='/contact' element={
                         <div className={!navVisible ? "page" : "page page-with-navbar"}>
-                            <h1>Contact</h1>
+                            <h1 className="name">Contact</h1>
+                            <div className="carousel-item-text">working on creating a modal on click with form submit to enter name and email with an autoresponder</div>
+                            <NavLink to="/about" className="home-link">
+                                <FaHome size={ICON_SIZE} />
+                                <span>Home</span>
+                            </NavLink>
+                        </div>
+                    } />
+                    <Route path='/about' element={
+                        <div className={!navVisible ? "page" : "page page-with-navbar"}>
+                            <h1 className="name">who am i?...</h1>
+                            <AboutMe />
                         </div>
                     } />
                 </Routes>
-            </div>
-        </BrowserRouter>
+            </div >
+        </BrowserRouter >
     );
 }
 

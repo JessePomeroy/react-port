@@ -4,6 +4,7 @@ import {
     FaAngleRight,
     FaBars,
     FaGithubAlt,
+    FaHome,
     FaReadme,
     FaRegUser,
     FaTerminal,
@@ -11,8 +12,16 @@ import {
 } from 'react-icons/fa';
 import { NavLink } from "react-router-dom";
 import "../style/navbar.css";
+// import { Container } from './container';
 
 const ICON_SIZE = 20;
+
+// const triggerText = 'Contact';
+// const onSubmit = (e) => {
+//     e.preventDefault(e);
+//     console.log(e.target.name.value);
+//     console.log(e.target.email.value);
+// };
 
 function Navbar({ visible, show }) {
 
@@ -41,11 +50,15 @@ function Navbar({ visible, show }) {
                         to="https://github.com/jessepomeroy"
                     >
                         <img
-                            src={require("../assets/Images/logo.png")}
+                            src={require("../assets/images/logo.png")}
                             alt="logo"
                         />
                     </NavLink>
                     <div className="links nav-top">
+                        <NavLink to="/projects" className="nav-link">
+                            <FaReadme size={ICON_SIZE} />
+                            <span>Projects</span>
+                        </NavLink>
                         <NavLink to="/socials" className="nav-link">
                             <FaRegUser size={ICON_SIZE} />
                             <span>Socials</span>
@@ -54,24 +67,28 @@ function Navbar({ visible, show }) {
                             <FaTree size={ICON_SIZE} />
                             <span>Black Rabbit</span>
                         </NavLink>
-                        <NavLink to="/github" className="nav-link">
-                            <FaGithubAlt size={ICON_SIZE} />
-                            <span>Github</span>
-                        </NavLink>
-                        <NavLink to="/projects" className="nav-link">
-                            <FaReadme size={ICON_SIZE} />
-                            <span>Projects</span>
-                        </NavLink>
+
                     </div>
                 </div>
 
                 <div className="links">
-                    <NavLink to="/contact" className="nav-link">
-                        <FaTerminal size={ICON_SIZE} />
-                        <span>Contact</span>
+                    <NavLink to="/about" className="nav-link">
+                        <FaHome size={ICON_SIZE} />
+                        <span>Home</span>
                     </NavLink>
+                    <NavLink to="https://github.com/jessepomeroy" className="nav-link">
+                        <FaGithubAlt size={ICON_SIZE} />
+                        <span>Github</span>
+                    </NavLink>
+                    <div>
+                        <NavLink to="/contact" className="nav-link">
+                            <FaTerminal size={ICON_SIZE} />
+                            <span>Contact</span>
+                            {/* <Container triggerText={triggerText} onSubmit={onSubmit} /> */}
+                        </NavLink>
+                    </div>
                 </div>
-            </nav>
+            </nav >
         </>
     );
 }

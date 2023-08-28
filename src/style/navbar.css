@@ -8,10 +8,11 @@ nav {
     width: 15%;
     min-height: 100vh;
     /* background-color: #753ffd; */
-    background-image: url("../assets/Images/receipt.png");
+    background-image: url("../assets/images/receipt.png");
     background-size: cover;
     padding: 2rem 1rem 1rem 1rem;
     transition: transform 1s;
+    z-index: 1;
 }
 
 .navbar {
