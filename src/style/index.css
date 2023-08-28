@@ -23,6 +23,18 @@
     color: #617d98;
 }
 
+.black-rabbit {
+    width: 75%;
+    height: 75%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-image: url('../assets/images/br.webp');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
 .carousel {
     overflow: hidden;
     width: 700px;

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaHome } from 'react-icons/fa';
 import { BrowserRouter, NavLink, Navigate, Route, Routes } from "react-router-dom";
 import AboutMe from "./components/about";
+import BlackRabbit from "./components/blackrabbit";
 import { Carousel } from "./components/carousel";
 
 import Navbar from "./components/navbar";
@@ -30,8 +31,7 @@ function App() {
                     } />
                     <Route path='/blackrabbit' element={
                         <div className={!navVisible ? "page" : "page page-with-navbar"}>
-                            <h1 className="name">Black Rabbit</h1>
-                            <a href="https://blackrabbitshop.com"> Black Rabbit </a>
+                            <BlackRabbit />
                             <NavLink to="/about" className="home-link">
                                 <FaHome size={ICON_SIZE} />
                                 <span>Home</span>
