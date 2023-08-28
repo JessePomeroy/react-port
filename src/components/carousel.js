@@ -12,12 +12,6 @@ export const Carousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const items = [
         {
-            title: "Baseball",
-            description:
-                "Baseball is a bat-and-ball sport played between two teams of nine players each, taking turns batting and fielding. The game occurs over the course of several plays, with each play generally beginning when a player on the fielding team, called the pitcher.",
-            // icon: require("./Media/example1.svg"),
-        },
-        {
             title: "Just Another Text Editor",
             description:
                 "Just Another Text Editor: This web application allows users to create and access notes and code snippets from any device, whether online or offline. Using service workers and the Cache API enables a fully functional offline experience. Users can access previously visited pages even when the app loses internet connectivity.",
@@ -25,10 +19,18 @@ export const Carousel = () => {
             link: "https://github.com/JessePomeroy/text-editor"
         },
         {
+            title: "HoriZen.FM",
+            description:
+                "Introducing Horizen.FM, the ultimate destination for personalized music recommendations! Our innovative web platform is designed to understand your unique taste and style, delivering the perfect song tailored just for you. With a simple and engaging interface, Horizen.FM prompts you with questions about your favorite genre, preferred language, and preferred nationality, allowing us to create a personalized music experience like no other.",
+            image: require("../assets/images/hzen.png"),
+            link: "https://github.com/gustavomg21/Horizen.FM"
+        },
+        {
             title: "Weights",
             description:
-                "Weightlifting generally refers to activities in which people lift weights, often in the form of dumbbells or barbells. People lift various kinds of weights for a variety of different reasons.",
-            // icon: require("./Media/example3.svg"),
+                "A weather forecast app utilizing openweathermap api to search and display current and 5 day forecast for a given city. requiring bootstrap, jquery and day.js.",
+            image: require("../assets/images/5day.PNG"),
+            link: "https://github.com/JessePomeroy/5dayforecast"
         },
     ];
     const updateIndex = (newIndex) => {

@@ -60,7 +60,7 @@
 .carousel-item-text {
     font-size: 1.15rem;
     margin: 50px 50px;
-    padding: 0 20px 0 20px;
+    padding: 50px 20px 0 20px;
     white-space: normal;
     color: #617d98;
 }
@@ -93,14 +93,14 @@
     background: none;
     border: none;
     cursor: pointer;
-    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .indicators {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 20px;
+    margin-bottom: 50px;
 }
 
 .indicator-buttons {
@@ -124,7 +124,7 @@
 .home-link {
     position: absolute;
     bottom: 0;
-    margin-bottom: 70px;
+    margin-bottom: 50px;
 }
 
 .name {
