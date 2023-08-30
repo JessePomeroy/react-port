@@ -32,6 +32,27 @@ export const Carousel = () => {
             image: require("../assets/images/5day.PNG"),
             link: "https://github.com/JessePomeroy/5dayforecast"
         },
+        {
+            title: "5 Day Forecast",
+            description:
+                "A weather forecast app utilizing openweathermap api to search and display current and 5 day forecast for a given city. requiring bootstrap, jquery and day.js.",
+            image: require("../assets/images/5day.PNG"),
+            link: "https://github.com/JessePomeroy/5dayforecast"
+        },
+        {
+            title: "5 Day Forecast",
+            description:
+                "A weather forecast app utilizing openweathermap api to search and display current and 5 day forecast for a given city. requiring bootstrap, jquery and day.js.",
+            image: require("../assets/images/5day.PNG"),
+            link: "https://github.com/JessePomeroy/5dayforecast"
+        },
+        {
+            title: "5 Day Forecast",
+            description:
+                "A weather forecast app utilizing openweathermap api to search and display current and 5 day forecast for a given city. requiring bootstrap, jquery and day.js.",
+            image: require("../assets/images/5day.PNG"),
+            link: "https://github.com/JessePomeroy/5dayforecast"
+        },
     ];
     const updateIndex = (newIndex) => {
         if (newIndex < 0) {

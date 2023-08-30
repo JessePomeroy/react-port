@@ -23,6 +23,8 @@ const ICON_SIZE = 20;
 //     console.log(e.target.email.value);
 // };
 
+// eventually plan to implement this modal and have it work with an auto-responder
+
 function Navbar({ visible, show }) {
 
     return (
