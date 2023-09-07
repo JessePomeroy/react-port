@@ -11,7 +11,7 @@ Eager to strengthen my skills with React, I designed and built a personal portfo
   * [preview](#preview)
   * [License](#license)
   * [Frameworks and Libraries](#frameworks-and-libraries)
-  * [Questions](#questions)
+  * [Deployment](#deployment)
   * [Credits](#credits)
 
 
@@ -30,7 +30,9 @@ react.js
 
 
 
-## Questions
+## Deployment
+
+https://jessepomeroy.github.io/react-port/
 
 https://github.com/jessepomeroy/react-port   
 
