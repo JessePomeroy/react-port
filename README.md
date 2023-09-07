@@ -17,7 +17,7 @@ Eager to strengthen my skills with React, I designed and built a personal portfo
 
 ## Preview
    
-[![Demo Scrot](https://github.com/JessePomeroy/react-port/blob/main/src/assets/Images/react-portfolio-scrot.png)]
+![Demo Scrot](https://github.com/JessePomeroy/react-port/blob/main/src/assets/Images/react-portfolio-scrot.png)
    
 ## License
 
