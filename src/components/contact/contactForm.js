@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
-import { validateEmail } from '../utils/helpers';
+import { validateEmail } from '../../utils/helpers';
 
 export default function ContactForm() {
 
@@ -64,7 +64,7 @@ export default function ContactForm() {
     return (
         <form className='contactForm' onSubmit={handleFormSubmit}>
             <h2>contact~</h2>
-            <div className='name'>
+            <div className='contactName'>
                 <label>Name:</label>
                 <input
                     placeholder='your name'

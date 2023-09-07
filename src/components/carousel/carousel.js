@@ -12,46 +12,46 @@ export const Carousel = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const items = [
         {
-            title: "Just Another Text Editor",
-            description:
-                "Just Another Text Editor: This web application allows users to create and access notes and code snippets from any device, whether online or offline. Using service workers and the Cache API enables a fully functional offline experience. Users can access previously visited pages even when the app loses internet connectivity.",
-            image: require("../assets/images/scrot1.png"),
-            link: "https://github.com/JessePomeroy/text-editor"
-        },
-        {
             title: "HoriZen.FM",
             description:
                 "Introducing Horizen.FM, the ultimate destination for personalized music recommendations! Our innovative web platform is designed to understand your unique taste and style, delivering the perfect song tailored just for you. With a simple and engaging interface, Horizen.FM prompts you with questions about your favorite genre, preferred language, and preferred nationality, allowing us to create a personalized music experience like no other.",
-            image: require("../assets/images/hzen.png"),
+            image: require("../../assets/images/hzen.png"),
             link: "https://github.com/gustavomg21/Horizen.FM"
         },
         {
             title: "5 Day Forecast",
             description:
                 "A weather forecast app utilizing openweathermap api to search and display current and 5 day forecast for a given city. requiring bootstrap, jquery and day.js.",
-            image: require("../assets/images/5day.PNG"),
+            image: require("../../assets/images/5day.PNG"),
             link: "https://github.com/JessePomeroy/5dayforecast"
         },
         {
-            title: "5 Day Forecast",
+            title: "nosql-nosocial",
             description:
-                "A weather forecast app utilizing openweathermap api to search and display current and 5 day forecast for a given city. requiring bootstrap, jquery and day.js.",
-            image: require("../assets/images/5day.PNG"),
-            link: "https://github.com/JessePomeroy/5dayforecast"
+                "A backend API for a social network that uses the NoSQL database that can handle large amounts of unstructured data. Using NoSQL, MongoDB and Mongoose users can operate a social network using the standard CRUD operations.",
+            image: require("../../assets/images/nosql.png"),
+            link: "https://github.com/JessePomeroy/nosql-nosocial"
         },
         {
-            title: "5 Day Forecast",
+            title: "Just Another Text Editor",
             description:
-                "A weather forecast app utilizing openweathermap api to search and display current and 5 day forecast for a given city. requiring bootstrap, jquery and day.js.",
-            image: require("../assets/images/5day.PNG"),
-            link: "https://github.com/JessePomeroy/5dayforecast"
+                "Just Another Text Editor: This web application allows users to create and access notes and code snippets from any device, whether online or offline. Using service workers and the Cache API enables a fully functional offline experience. Users can access previously visited pages even when the app loses internet connectivity.",
+            image: require("../../assets/images/scrot1.png"),
+            link: "https://github.com/JessePomeroy/text-editor"
         },
         {
-            title: "5 Day Forecast",
+            title: "Employee Tracker",
             description:
-                "A weather forecast app utilizing openweathermap api to search and display current and 5 day forecast for a given city. requiring bootstrap, jquery and day.js.",
-            image: require("../assets/images/5day.PNG"),
-            link: "https://github.com/JessePomeroy/5dayforecast"
+                "A content management system that operates in the command line to manage a company's employee database.",
+            image: require("../../assets/images/employeetracker.png"),
+            link: "https://github.com/JessePomeroy/employee-tracker"
+        },
+        {
+            title: "Readme Generator",
+            description:
+                "A small readme generator app built with node.js that prompts the user through the console with inquirer and writes the responses to a readme file.",
+            image: require("../../assets/images/readmegen.png"),
+            link: "https://github.com/JessePomeroy/readme-generator"
         },
     ];
     const updateIndex = (newIndex) => {

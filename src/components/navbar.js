@@ -1,4 +1,3 @@
-import React from 'react';
 import {
     FaAngleLeft,
     FaAngleRight,
@@ -60,10 +59,6 @@ function Navbar({ visible, show }) {
                         <NavLink to="/projects" className="nav-link">
                             <FaReadme size={ICON_SIZE} />
                             <span>Projects</span>
-                        </NavLink>
-                        <NavLink to="/socials" className="nav-link">
-                            <FaRegUser size={ICON_SIZE} />
-                            <span>Socials</span>
                         </NavLink>
                         <NavLink to="/blackrabbit" className="nav-link">
                             <FaTree size={ICON_SIZE} />

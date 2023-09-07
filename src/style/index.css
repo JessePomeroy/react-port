@@ -7,6 +7,15 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+:root {
+    --main-font-family: 'Receipt', 'monospace', 'sans-serif', 'helvetica', sans-serif;
+    font-size: 16px;
+    --text-primary: #000;
+    --text-secondary: #fff;
+    --bg-primary: rgb(159, 86, 86);
+    --bg-secondary: rgb(78, 9, 31);
+}
+
 .App {
     display: flex;
     flex-direction: column;
@@ -15,7 +24,6 @@
 }
 
 .about-me {
-
     font-size: 1.15rem;
     margin: 50px 50px;
     padding: 0 20px 0 20px;
@@ -23,16 +31,28 @@
     color: #617d98;
 }
 
+.about-me img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.black-rabbit-div {
+    height: 100%;
+    width: 100%;
+}
+
 .black-rabbit {
-    width: 75%;
     height: 75%;
-    text-align: center;
-    display: flex;
-    justify-content: center;
     background-image: url('../assets/images/br.webp');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
+}
+
+
+.black-rabbit-link {
+    text-align: center;
 }
 
 .carousel {
@@ -41,6 +61,40 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.contactForm {
+    background-color: var(--bg-primary);
+    color: white;
+    width: 90%;
+    padding: 15px;
+    margin: 20px;
+    border-radius: 15px;
+    align-self: center;
+}
+
+.contactForm h2 {
+    margin: 0px;
+}
+
+.contactForm div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.contactForm input {
+    width: 50%;
+    display: block;
+}
+
+.contactForm label {
+    display: inline;
+}
+
+.contactForm textarea {
+    resize: none;
+    width: 90%;
+    display: block;
 }
 
 .inner {
@@ -69,7 +123,7 @@
     width: 300px;
     padding: 0 20px 0 20px;
     position: absolute;
-    margin-bottom: 500px;
+    margin-bottom: 375px;
 }
 
 .carousel-link {
@@ -86,7 +140,6 @@
 .carousel-title {
     position: absolute;
     top: 0;
-
 }
 
 .button-arrow {
@@ -94,6 +147,17 @@
     border: none;
     cursor: pointer;
     margin-bottom: 50px;
+}
+
+.footer {
+    position: fixed;
+    height: 75px;
+    bottom: 0;
+}
+
+.home-link {
+    display: flex;
+    align-items: center;
 }
 
 .indicators {
@@ -121,11 +185,6 @@
     color: #ffffff;
 }
 
-.home-link {
-    position: absolute;
-    bottom: 0;
-    margin-bottom: 50px;
-}
 
 .name {
     position: absolute;
