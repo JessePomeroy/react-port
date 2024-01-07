@@ -5,7 +5,6 @@ import {
   FaGithubAlt,
   FaHome,
   FaReadme,
-  FaRegUser,
   FaTerminal,
   FaTree,
 } from "react-icons/fa";
